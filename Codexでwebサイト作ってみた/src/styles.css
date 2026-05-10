@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+:root {
+  color: #1f1d1a;
+  background: #fffdf9;
+  font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --color-ink: #1f1d1a;
+  --color-muted: #736d64;
+  --color-soft: #f8f4ec;
+  --color-line: #e8dcc8;
+  --color-gold: #b89b5e;
+  --color-gold-dark: #8d7138;
+  --font-serif: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(255, 253, 249, 1)),
+    radial-gradient(circle at top left, rgba(184, 155, 94, 0.08), transparent 34rem);
+  color: var(--color-ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(184, 155, 94, 0.24);
+}
+
+.font-serif-jp {
+  font-family: var(--font-serif);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.hairline {
+  border-color: var(--color-line);
+}
+
+.champagne-rule {
+  position: relative;
+}
+
+.champagne-rule::after {
+  display: block;
+  width: 4.5rem;
+  height: 1px;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  content: "";
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll {
+  animation: fadeUp 0.8s ease both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 28%;
+}
+
+.luxury-image {
+  filter: saturate(0.92) contrast(0.98);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.luxury-focus {
+  outline: 1px solid transparent;
+  outline-offset: 4px;
+}
+
+.luxury-focus:focus-visible {
+  outline-color: var(--color-gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
