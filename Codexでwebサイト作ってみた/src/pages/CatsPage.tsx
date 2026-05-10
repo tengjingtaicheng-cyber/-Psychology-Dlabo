@@ -1,21 +1,26 @@
 import heroImage from '../assets/generated/hero-lounge.png';
-import catsImage from '../assets/generated/cat-portraits-sheet.png';
+import byakuyaImage from '../assets/generated/cats/byakuya.png';
+import kohakuImage from '../assets/generated/cats/kohaku.png';
+import renImage from '../assets/generated/cats/ren.png';
+import rinImage from '../assets/generated/cats/rin.png';
+import shizukuImage from '../assets/generated/cats/shizuku.png';
+import tsumugiImage from '../assets/generated/cats/tsumugi.png';
 
 type CatProfile = {
   name: string;
   personality: string;
   place: string;
   schedule: string[];
-  position: string;
+  image: string;
 };
 
 const cats: CatProfile[] = [
-  { name: '琥珀', personality: '穏やかで優雅', place: '窓辺のソファ', schedule: ['月', '火', '水', '金', '土'], position: '14% 22%' },
-  { name: '白夜', personality: 'おっとりしている', place: 'ラウンジ中央のソファ', schedule: ['月', '火', '木', '土'], position: '50% 22%' },
-  { name: '凛', personality: 'クールで気品がある', place: '書棚の上段', schedule: ['月', '水', '金', '土', '日'], position: '84% 22%' },
-  { name: '紬', personality: '甘えん坊で人懐っこい', place: 'キャットタワーの最上段', schedule: ['火', '水', '木', '土'], position: '14% 78%' },
-  { name: '雫', personality: '繊細で控えめ', place: '観葉植物のそば', schedule: ['月', '火', '金', '土'], position: '50% 78%' },
-  { name: '蓮', personality: 'のんびりマイペース', place: '大理石のテーブルの上', schedule: ['水', '木', '金', '土', '日'], position: '84% 78%' },
+  { name: '琥珀', personality: '穏やかで優雅', place: '窓辺のソファ', schedule: ['月', '火', '水', '金', '土'], image: kohakuImage },
+  { name: '白夜', personality: 'おっとりしている', place: 'ラウンジ中央のソファ', schedule: ['月', '火', '木', '土'], image: byakuyaImage },
+  { name: '凛', personality: 'クールで気品がある', place: '書棚の上段', schedule: ['月', '水', '金', '土', '日'], image: rinImage },
+  { name: '紬', personality: '甘えん坊で人懐っこい', place: 'キャットタワーの最上段', schedule: ['火', '水', '木', '土'], image: tsumugiImage },
+  { name: '雫', personality: '繊細で控えめ', place: '観葉植物のそば', schedule: ['月', '火', '金', '土'], image: shizukuImage },
+  { name: '蓮', personality: 'のんびりマイペース', place: '大理石のテーブルの上', schedule: ['水', '木', '金', '土', '日'], image: renImage },
 ];
 
 const days = ['月', '火', '水', '木', '金', '土', '日'];
@@ -45,9 +50,9 @@ export function CatsPage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-24 md:px-12">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {cats.map(({ name, personality, place, schedule, position }) => (
+          {cats.map(({ name, personality, place, schedule, image }) => (
             <article className="group overflow-hidden border border-[#d9c7a4] bg-white transition duration-500 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(79,62,37,.08)]" key={name}>
-              <img className="luxury-image h-72 w-full object-cover transition duration-700 group-hover:scale-[1.03]" src={catsImage} alt={`${name}の写真`} style={{ objectPosition: position }} />
+              <img className="luxury-image h-72 w-full object-cover transition duration-700 group-hover:scale-[1.03]" src={image} alt={`${name}の写真`} />
               <div className="p-8">
                 <h2 className="text-center font-serif text-3xl">{name}</h2>
                 <div className="mx-auto mt-4 h-px w-10 bg-[#b08a3c]" />

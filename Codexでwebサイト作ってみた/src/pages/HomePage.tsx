@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom';
 import heroImage from '../assets/generated/hero-lounge.png';
 import spaceImage from '../assets/generated/interior-sheet.png';
-import catsImage from '../assets/generated/cat-portraits-sheet.png';
 import menuImage from '../assets/generated/menu-sheet.png';
+import emileImage from '../assets/generated/cats/ren.png';
+import lucienImage from '../assets/generated/cats/kohaku.png';
+import charlotteImage from '../assets/generated/cats/byakuya.png';
 
 const cats = [
-  ['ルシアン', 'サイベリアン', '窓辺で光を眺めるのが好きな、穏やかな男の子。'],
-  ['シャルロット', 'ブリティッシュショートヘア', '好奇心旺盛で、人のそばにそっと寄り添います。'],
-  ['エミール', 'ラグドール', 'のんびり屋で、午後のラウンジによく似合う子。'],
+  ['ルシアン', 'サイベリアン', '窓辺で光を眺めるのが好きな、穏やかな男の子。', lucienImage],
+  ['シャルロット', 'ブリティッシュショートヘア', '好奇心旺盛で、人のそばにそっと寄り添います。', charlotteImage],
+  ['エミール', 'ラグドール', 'のんびり屋で、午後のラウンジによく似合う子。', emileImage],
 ];
 
 const menuItems = [
@@ -84,9 +86,9 @@ export function HomePage() {
           <h2 className="mt-4 font-serif text-4xl">今日をともに過ごす猫たち</h2>
         </div>
         <div className="grid gap-8 md:grid-cols-3">
-          {cats.map(([name, breed, text]) => (
+          {cats.map(([name, breed, text, image]) => (
             <article className="overflow-hidden border border-[#d9c7a4] bg-white transition duration-500 hover:-translate-y-1 hover:shadow-[0_18px_40px_rgba(79,62,37,.08)]" key={name}>
-              <img className="luxury-image h-64 w-full object-cover" src={catsImage} alt={`${name}の写真`} />
+              <img className="luxury-image h-64 w-full object-cover" src={image} alt={`${name}の写真`} />
               <div className="p-7">
                 <h3 className="font-serif text-2xl">{name}</h3>
                 <p className="mt-3 text-xs text-[#8b7b66]">{breed}</p>
