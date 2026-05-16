@@ -150,3 +150,36 @@ AIが進化するほど、
 - [Embracing change and resetting expectations — Microsoft Unlocked (Terence Tao)](https://unlocked.microsoft.com/ai-anthology/terence-tao/)
 - [Is Math the Next AI Frontier? A Conversation with Terence Tao](https://www.renaissancephilanthropy.org/insights/is-math-the-next-ai-frontier-a-conversation-with-terence-tao)
 - ["The Mozart of Mathematics" Terence Tao: AI is a Partner, Not a Replacement](https://www.aibase.com/news/12169)
+
+---
+
+## 穴埋め問題
+
+### 問題
+
+1. テレンス・タオは、オーストラリア出身の数学者で、UCLAの（1）である。
+2. タオは「数学界の（2）」と呼ばれている。
+3. AIの進化は、「（3）とは何か」という問いを人間側へ突き返している。
+4. チェス・将棋、数学、自然な会話など、昔は（4）にしかできないと思われていた領域をAIが突破し始めている。
+5. 人間は、AIが何かをできるようになると「本当の知能ではなく、ただの（5）だ」と格下げしがちである。
+6. LLMは、ただ（6）を予測しているだけに見えるのに、役に立つ文章を作れている。
+7. タオの問いは、人間の思考も、過去の経験や文脈から「次に何を言うか」を（7）しているだけかもしれない、というものだった。
+8. タオは、AIは人間の代わりではなく（8）になると考えている。
+
+### 答え
+
+| 番号 | 答え |
+|---|---|
+| （1） | 教授 |
+| （2） | モーツァルト |
+| （3） | 知能 |
+| （4） | 人間 |
+| （5） | アルゴリズム |
+| （6） | 次の言葉 |
+| （7） | 予測 |
+| （8） | パートナー |
+
+### AIニュースポイント
+
+- AIの進化は「AIはどこまで賢いか」だけでなく、「人間の知能とは何か」を考えるきっかけになる。
+- 「仕組みがわかると知能ではないと思ってしまう」人間のクセも、心理学的に大事な見方である。

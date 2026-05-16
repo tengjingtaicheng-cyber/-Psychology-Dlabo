@@ -132,3 +132,36 @@ AIは「文字」ではなく「トークン」の単位で考えていると覚
 - [What is an agent harness? — Parallel Web Systems](https://parallel.ai/articles/what-is-an-agent-harness)
 - [How Do LLMs Work? Understanding Next Token Prediction](https://faridkazimov.com/blog/2026/how-llms-work/)
 - [Anthropic rewrites Claude's guiding principles — Fortune](https://fortune.com/2026/01/21/anthropic-claude-ai-chatbot-new-rules-safety-consciousness/)
+
+---
+
+## 穴埋め問題
+
+### 問題
+
+1. LLM（大規模言語モデル）の基本は、次に来る（1）を予測する仕組みである。
+2. AIが扱う文章の単位は、文字数そのものではなく（2）である。
+3. AIは、インターネット上の文章・書籍・論文などの（3）を学習して、言葉の並びやすさを覚える。
+4. 昔のAIは、主に（4）の中にある情報をもとに文章を作っていた。
+5. 最近のAIは、モデル単体ではなく（5）という実行環境の中で動くことで、外部の道具を使えるようになった。
+6. ハーネスによって、AIはWeb検索、ファイル参照、コード実行、ブラウザ操作、（6）などができる。
+7. Anthropicには、AIの福祉を考える（7）という研究チームがある。
+8. AIに意識があるかどうかの議論で大事なのは、仕組みは今も（8）であり、変わったのは環境と使える道具だという点である。
+
+### 答え
+
+| 番号 | 答え |
+|---|---|
+| （1） | トークン |
+| （2） | トークン |
+| （3） | 膨大なテキスト |
+| （4） | 学習データ |
+| （5） | ハーネス |
+| （6） | 画像を見ること |
+| （7） | モデルウェルフェア |
+| （8） | 次のトークンを予測すること |
+
+### AIニュースポイント
+
+- LLMは「考えているように見える」が、基本は次のトークン予測である。
+- 今のAIの強さは、モデルそのものだけでなく、検索や実行などの外部ツールを使える環境にもある。
